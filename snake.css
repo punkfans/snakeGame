@@ -1,0 +1,53 @@
+.cell {
+    background-color: aliceblue;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+}
+
+#gameBoard {
+    width: 500px;
+    height:500px;
+}
+
+.row {
+    height: 25px;
+}
+
+.overLay {
+    display: none;
+    position: absolute;
+    top: 27px;
+    width: 500px;
+    height: 500px;
+    opacity: .7;
+    background-color: steelblue;
+}
+
+.image {
+    width: 200px;
+    height:200px;
+    display: block;
+    margin: auto;
+}
+
+#gameOverScore {
+    color: red;
+}
+
+.game-over-text {
+    text-align: center;
+}
+
+#beforeGameOverlay {
+    display: block;
+}
+
+.countDownContainer {
+    position: relative;
+    top: 35%;
+}
+
+#countDown {
+    visibility: hidden;
+}

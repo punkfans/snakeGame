@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="snake.css">
+    <script src="snake.js"></script>
+</head>
+<body onload="init()">
+    <div>
+        <div>
+            <span>Score: <span id="score">0</span></span>
+        </div>
+        <!--The game board-->
+        <div id="gameBoard"></div>
+        <!--this overlay is for the game over screen-->
+        <div id="overLay" class="overLay">
+            <img class="image center" src="gameOver.png"/>
+            <div>
+                <h1 class="game-over-text">Game Over!</h1>
+                <h3 class="game-over-text">Your Score: <span id="gameOverScore"></span></h3>
+                <h1 class="game-over-text">Press Space to restart</h1>
+            </div>
+        </div>
+        <!--this overlay is for start/pause game screen-->
+        <div id="beforeGameOverlay" class="overLay">
+            <div class="countDownContainer">
+                <h1 id="countDown" class="game-over-text">3</h1>
+                <h2 id="instruction" class="game-over-text">Press Space to start or pause the game</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
